@@ -60,6 +60,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateUser(int idUser, UserDTO userDTO) {
+
+        if (userDTO.getName().isEmpty()) {
+            throw new RuleOfException("O Compo nome está vazio");
+        }
+
         userRepository.findById(idUser).map(user -> {
             user.setName(userDTO.getName());
             return userRepository.save(user);
