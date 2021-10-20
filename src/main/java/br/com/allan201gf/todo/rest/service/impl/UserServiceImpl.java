@@ -68,6 +68,6 @@ public class UserServiceImpl implements UserService {
         userRepository.findById(idUser).map(user -> {
             user.setName(userDTO.getName());
             return userRepository.save(user);
-        }).orElseThrow( () -> new RuleOfException("Usuario não encontrado"));
+        }).orElseThrow( () -> new RuleOfException("Usuário não encontrado"));
     }
 }
