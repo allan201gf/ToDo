@@ -1,5 +1,6 @@
 package br.com.allan201gf.todo.domain.entity;
 
+import br.com.allan201gf.todo.domain.enums.StatusToDo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,6 +24,8 @@ public class ToDo {
     private String description;
 
     private LocalDate dateEndTodo;
+
+    private StatusToDo status;
 
     @ManyToOne
     @JoinColumn(name = "user_id_user")

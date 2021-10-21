@@ -15,5 +15,6 @@ public class ToDoDTO {
     private String name;
     private String description;
     private String dataEndTodo;
+    private String status;
 
 }
