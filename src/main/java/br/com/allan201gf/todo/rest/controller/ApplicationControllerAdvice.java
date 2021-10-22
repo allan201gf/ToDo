@@ -1,6 +1,6 @@
 package br.com.allan201gf.todo.rest.controller;
 
-import br.com.allan201gf.todo.domain.exception.ApiErrors;
+import br.com.allan201gf.todo.rest.ApiErrors;
 import br.com.allan201gf.todo.domain.exception.RuleOfException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;

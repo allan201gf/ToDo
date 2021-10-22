@@ -1,4 +1,4 @@
-package br.com.allan201gf.todo.domain.exception;
+package br.com.allan201gf.todo.rest;
 
 import lombok.Getter;
 
