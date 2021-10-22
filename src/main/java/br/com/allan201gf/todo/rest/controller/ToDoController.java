@@ -34,6 +34,11 @@ public class ToDoController {
         return toDoService.allToDo();
     }
 
+    @GetMapping("/todoforday")
+    public List<ToDo> toDoOfDay (@RequestParam String day) {
+        return toDoService.toDoOfDay(day);
+    }
+
 
 
 }

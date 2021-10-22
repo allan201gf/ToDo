@@ -13,6 +13,6 @@ public interface ToDoService {
 
     List<ToDo> allToDo();
 
-    List<ToDo> toDoOfDay();
+    List<ToDo> toDoOfDay(String day);
 
 }
