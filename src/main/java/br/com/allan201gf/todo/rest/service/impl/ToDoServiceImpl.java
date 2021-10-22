@@ -74,7 +74,14 @@ public class ToDoServiceImpl implements ToDoService {
 
     @Override
     public List<ToDo> toDoOfDay(String day) {
-        LocalDate dayFormated = stringForDate(day);
+
+        LocalDate dayFormated;
+
+        if(day.isEmpty()) {
+            dayFormated = LocalDate.now();
+        } else {
+            dayFormated = stringForDate(day);
+        }
 
         return toDoRepository.dayToDo(dayFormated);
 
